@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--image size-->
+
+    <dimen name="d_img_top_height">240dp</dimen>
+    <dimen name="d_img_admin_width">40dp</dimen>
+    <dimen name="d_img_admin_height">45dp</dimen>
+
+    <dimen name="d_img_exit_width">40dp</dimen>
+    <dimen name="d_img_exit_height">45dp</dimen>
+    <dimen name="d_shape_corner_height">220dp</dimen>
+    <dimen name="d_img_logo_width">60dp</dimen>
+    <dimen name="d_img_logo_height">60dp</dimen>
+    <dimen name="d_img_rmb_width">20dp</dimen>
+    <dimen name="d_img_rmb_height">20dp</dimen>
+
+    <dimen name="d_img_m_logo_width">100dp</dimen>
+    <dimen name="d_img_m_logo_height">100dp</dimen>
+    
+    <dimen name="d_img_close_w">30dp</dimen>
+    <dimen name="d_img_close_h">30dp</dimen>
+
+    <dimen name="d_img_err_w">200dp</dimen>
+    <dimen name="d_img_err_h">150dp</dimen>
+    <dimen name="d_img_no_server_w">20dp</dimen>
+    <dimen name="d_img_no_server_h">20dp</dimen>
+
+    <dimen name="d_img_cutpaper_success_w">20dp</dimen>
+    <dimen name="d_img_cutpaper_success_h">25dp</dimen>
+
+    <!--button_size-->
+
+    <dimen name="d_add_subtract_h">40dp</dimen>
+    <dimen name="d_button_buy_w">110dp</dimen>
+    <dimen name="d_button_buy_h">28dp</dimen>
+    <dimen name="d_button_denomination_w">40dp</dimen>
+    <dimen name="d_button_denomination_h">20dp</dimen>
+
+
+    <!--text_size-->
+    <dimen name="d_textsiz_lottery_value">30sp</dimen>
+    <dimen name="d_textsize_button_buy">16sp</dimen>
+    
+    <dimen name="d_sales_info">20sp</dimen>
+    <dimen name="d_total_sales">16sp</dimen>
+
+    <dimen name="d_pop_select_title">16sp</dimen>
+    <dimen name="d_pop_select_buying_tips">12sp</dimen>
+    <dimen name="d_pop_select_buy_ticket_number">20sp</dimen>
+    <dimen name="d_pop_select_payment_remind">18sp</dimen>
+    <dimen name="d_pop_select_sum_payable">20sp</dimen>
+
+    <dimen name="d_pop_manager_title">16sp</dimen>
+    <dimen name="d_pop_manager_text">13sp</dimen>
+    <dimen name="d_pop_manager_hint">12sp</dimen>
+
+    <dimen name="d_pop_scan_pay_title">16sp</dimen>
+    <dimen name="d_pop_scan_pay_valid_time">12sp</dimen>
+
+    <dimen name="d_pop_cuuter_paper">16sp</dimen>
+    <dimen name="d_pop_cuuter_paper_tips">12sp</dimen>
+
+    <dimen name="d_pop_cut_paper_success">16sp</dimen>
+    <dimen name="d_pop_cut_paper_success_tips">12sp</dimen>
+
+    <dimen name="d_pop_cut_paper_result">16sp</dimen>
+    <dimen name="d_pop_cut_paper_result_tv">12sp</dimen>
+    <dimen name="d_pop_cut_paper_result_hint">10sp</dimen>
+
+    <dimen name="d_listpop_item">13sp</dimen>
+
+          <!--activity_no_server-->
+    <dimen name="d_no_server">30sp</dimen>
+    <dimen name="d_server_number">20sp</dimen>
+
+    <!--margin-->
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+
+
+</resources>

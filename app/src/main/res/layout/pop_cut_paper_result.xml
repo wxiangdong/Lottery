@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_pop">
+
+    <TextView
+        android:text="@string/cut_paper_result"
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/d_pop_cut_paper_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="@dimen/d_img_close_w"
+        android:layout_height="@dimen/d_img_close_h"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@mipmap/close" />
+
+    <TextView
+        android:id="@+id/tv_machineID"
+        android:text="@string/machineID"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textColor="@color/color_buying_tips"
+        android:layout_below="@+id/bt_close"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/d_pop_cut_paper_result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_ordernum"
+        android:text="@string/order_number"
+        android:layout_below="@+id/tv_machineID"
+        android:textColor="@color/color_buying_tips"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/d_pop_cut_paper_result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@mipmap/error"
+        android:id="@+id/img_cutpaper_failur"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_ordernum"
+        android:layout_marginTop="@dimen/margin_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:text="@string/count_down"
+        android:layout_below="@+id/img_cutpaper_failur"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textSize="@dimen/d_pop_cut_paper_result_tv"
+        android:textColor="@color/color_buying_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_cut_result_hint"
+        android:text="@string/cut_result"
+        android:textSize="@dimen/d_pop_cut_paper_result_tv"
+        android:textColor="@color/color_verify_input_error"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_count_down"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/tv_cut_result_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:background="@drawable/shape_button">
+
+        <TextView
+            android:id="@+id/tv_cut_paper_hint1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/cut_paper_failure_hint1"
+            android:textSize="@dimen/d_pop_cut_paper_result_hint"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/tv_cut_paper_hint1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_6"
+            android:text="@string/cut_paper_failure_hint2"
+            android:textSize="@dimen/d_pop_cut_paper_result_hint"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

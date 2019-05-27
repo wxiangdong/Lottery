@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_pop"
+    android:focusable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/terminal_and_ticket"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/d_pop_manager_title" />
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="@dimen/d_img_close_w"
+        android:layout_height="@dimen/d_img_close_h"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@mipmap/close" />
+
+    <TextView
+        android:id="@+id/tv_denamination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_close"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:text="@string/choose_denomination"
+        android:textColor="@color/color_buying_tips"
+        android:textSize="@dimen/d_pop_manager_text" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_denamination"
+        android:layout_below="@+id/tv_denamination"
+        android:layout_marginTop="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bt_two_dollars"
+            android:layout_width="@dimen/d_button_denomination_w"
+            android:layout_height="@dimen/d_button_denomination_h"
+            android:background="@drawable/selector_btn_backg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/two_dollars"
+            android:textColor="@drawable/selector_btn_textcolor"
+            android:textSize="@dimen/d_pop_manager_hint" />
+
+        <RadioButton
+            android:id="@+id/bt_five_dollars"
+            android:layout_width="@dimen/d_button_denomination_w"
+            android:layout_height="@dimen/d_button_denomination_h"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/selector_btn_backg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/five_dollars"
+            android:textColor="@drawable/selector_btn_textcolor"
+            android:textSize="@dimen/d_pop_manager_hint" />
+
+        <RadioButton
+            android:id="@+id/bt_ten_dollars"
+            android:layout_width="@dimen/d_button_denomination_w"
+            android:layout_height="@dimen/d_button_denomination_h"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/selector_btn_backg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/ten_dollars"
+            android:textColor="@drawable/selector_btn_textcolor"
+            android:textSize="@dimen/d_pop_manager_hint" />
+
+        <RadioButton
+            android:id="@+id/bt_twenty_dollars"
+            android:layout_width="@dimen/d_button_denomination_w"
+            android:layout_height="@dimen/d_button_denomination_h"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/selector_btn_backg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/twenty_dollars"
+            android:textColor="@drawable/selector_btn_textcolor"
+            android:textSize="@dimen/d_pop_manager_hint" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_select_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_denamination"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/select_ticket"
+        android:textColor="@color/color_buying_tips"
+        android:textSize="@dimen/d_pop_manager_text" />
+
+    <FrameLayout
+        android:id="@+id/lottery_type"
+        android:layout_alignLeft="@+id/tv_denamination"
+        android:layout_below="@+id/tv_select_ticket"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_spinner"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_height="24dp">
+
+        <TextView
+            android:id="@+id/tv_lottery_type"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_height="23dp"
+            android:gravity="start|center"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/d_pop_manager_text" />
+
+        <ImageView
+            android:background="@mipmap/icon_down"
+            android:id="@+id/img_lottery_type"
+            android:layout_gravity="end"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_add_ticketnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_denamination"
+        android:layout_below="@+id/lottery_type"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/add_ticket_number"
+        android:textColor="@color/color_buying_tips"
+        android:textSize="@dimen/d_pop_manager_text" />
+
+    <EditText
+        android:id="@+id/edit_ticketnumber"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_black"
+        android:layout_alignLeft="@+id/tv_denamination"
+        android:layout_below="@+id/tv_add_ticketnumber"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/shape_spinner"
+        android:hint="@string/add_ticket_hint"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textScaleX="1.5"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/bt_stock"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignLeft="@+id/tv_denamination"
+        android:layout_below="@+id/edit_ticketnumber"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/selector_btn_stock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_ticketnumber"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@+id/bt_stock"
+        android:text="@string/stock_lottery"
+        android:textColor="@color/color_buying_tips"
+        android:textSize="@dimen/d_pop_manager_text" />
+
+    <Button
+        android:id="@+id/button_confirm_add"
+        android:layout_width="@dimen/d_button_buy_w"
+        android:layout_height="@dimen/d_button_buy_h"
+        android:layout_below="@+id/bt_stock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/shape_button"
+        android:gravity="center"
+        android:text="@string/button_sure_add"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/d_textsize_button_buy" />
+
+</RelativeLayout>

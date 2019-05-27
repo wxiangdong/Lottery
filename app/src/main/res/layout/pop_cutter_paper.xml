@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_pop"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_cutting"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cutting_paper"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/d_pop_cuuter_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="@dimen/d_img_close_w"
+        android:layout_height="@dimen/d_img_close_h"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@mipmap/close" />
+
+    <com.android.mogulotterymachine.view.CustomCircleProgressBar
+        android:id="@+id/custom_progressbar"
+        android:layout_below="@+id/bt_close"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:max_progress="100"
+        app:outside_color="@color/colorRed"
+        app:outside_radius="70dp"
+        app:progress="0"
+        app:progress_width="3dp"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/custom_progressbar"
+        android:text="@string/cutting_tips"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/d_pop_cuuter_paper_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

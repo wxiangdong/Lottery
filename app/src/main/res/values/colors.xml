@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="translucent_white">#61FFFFFF</color>
+
+    <!--no_server-->
+    <color name="home_background">#ffd359</color>
+    <color name="shape_background">#ffffff</color>
+    <color name="stroke_color">#fbb20e</color>
+    <color name="no_server">#e80d32</color>
+    <color name="server_number">#ff0000</color>
+    <color name="inside_color">#d1cdcd</color>
+    <!--normal-->
+    <color name="color_button_background">#d41e15</color>
+    <color name="lottery_value">#d41e15</color>
+    <color name="shape_button_background">#d41e15</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#d41e15</color>
+
+    <color name="color_buying_tips">#969696</color>
+    <color name="color_font_manager">#666666</color>
+    <color name="color_background_gray">#f2f2f2</color>
+    
+    <color name="color_black">#000000</color>
+    <color name="color_denomination_backg">#d0cdcd</color>
+
+    <color name="color_verify_input_error">#e80d32</color>
+
+</resources>

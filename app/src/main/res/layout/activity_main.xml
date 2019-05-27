@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background">
+
+    <ImageView
+        android:id="@+id/img_top"
+        android:background="@mipmap/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_img_top_height" />
+
+    <ImageView
+        android:id="@+id/img_admin"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_6"
+        android:src="@mipmap/admin"
+        android:layout_width="@dimen/d_img_admin_width"
+        android:layout_height="@dimen/d_img_admin_height" />
+
+    <RelativeLayout
+        android:id="@+id/no_server"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_below="@+id/img_top"
+        android:background="@drawable/shape_corner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_shape_corner_height"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20">
+
+        <ImageView
+            android:layout_marginTop="@dimen/margin_20"
+            android:id="@+id/img_error"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/not"
+            android:layout_width="@dimen/d_img_err_w"
+            android:layout_height="@dimen/d_img_err_h" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/server_connect"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/img_top"
+        android:background="@drawable/shape_corner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_shape_corner_height"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/logo"
+            android:layout_width="@dimen/d_img_logo_width"
+            android:layout_height="@dimen/d_img_logo_height" />
+
+        <LinearLayout
+            android:id="@+id/layout_lottery_value"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/rmb"
+                android:layout_width="@dimen/d_img_rmb_width"
+                android:layout_height="@dimen/d_img_rmb_height" />
+
+            <TextView
+                android:id="@+id/tx_lottery_denomination"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_gravity="center"
+                android:textColor="@color/lottery_value"
+                android:textSize="@dimen/d_textsiz_lottery_value"
+                android:text="@string/lottery_value_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_buy"
+            android:layout_below="@+id/layout_lottery_value"
+            android:text="@string/button_buy"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/d_textsize_button_buy"
+            android:background="@drawable/shape_button"
+            android:layout_width="@dimen/d_button_buy_w"
+            android:layout_height="@dimen/d_button_buy_h"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

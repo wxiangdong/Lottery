@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_pop">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_15"
+        android:text="@string/cut_paper_success"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/d_pop_cut_paper_success" />
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_width="@dimen/d_img_close_w"
+        android:layout_height="@dimen/d_img_close_h"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@mipmap/close" />
+
+    <ImageView
+        android:id="@+id/img_success"
+        android:src="@mipmap/suc"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:text="@string/cut_paper_success"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorRed"
+        android:layout_below="@+id/img_success"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textSize="@dimen/d_pop_cuuter_paper_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_below="@+id/tv_success"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cut_paper_success_tips"
+        android:textSize="@dimen/d_pop_cuuter_paper_tips"
+        android:textColor="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/tv_tips"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cut_paper_success_thanks"
+        android:textSize="@dimen/d_pop_cuuter_paper_tips"
+        android:textColor="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

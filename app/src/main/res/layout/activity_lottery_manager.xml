@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_gray">
+
+    <RelativeLayout
+        android:id="@+id/img_top"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:background="@mipmap/dtop"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/img_exit"
+            android:src="@mipmap/exit"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/d_img_exit_width"
+            android:layout_height="@dimen/d_img_exit_height" />
+
+        <ImageView
+            android:id="@+id/lottery_logo"
+            android:src="@mipmap/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="@dimen/d_img_m_logo_width"
+            android:layout_height="@dimen/d_img_m_logo_height" />
+
+        <Button
+            android:id="@+id/button_manager_lottery"
+            android:layout_below="@+id/lottery_logo"
+            android:text="@string/button_add_in_ticket"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/d_textsize_button_buy"
+            android:background="@drawable/shape_button"
+            android:layout_width="@dimen/d_button_buy_w"
+            android:layout_height="@dimen/d_button_buy_h"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_sales_info"
+        android:layout_below="@+id/img_top"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_sales_info"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/sales_info"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/d_sales_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/total_sale"
+            android:text="@string/total_sales"
+            android:textSize="@dimen/d_total_sales"
+            android:textColor="@color/color_font_manager"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_alignLeft="@+id/tv_sales_info"
+            android:layout_below="@+id/tv_sales_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/total_sales_number"
+            android:text="@string/total_sales_number"
+            android:textSize="@dimen/d_total_sales"
+            android:textColor="@color/color_font_manager"
+            android:layout_alignBaseline="@+id/total_sale"
+            android:layout_toRightOf="@+id/total_sale"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sales_amount"
+            android:text="@string/sales_amount"
+            android:textSize="@dimen/d_total_sales"
+            android:textColor="@color/color_font_manager"
+            android:layout_alignBaseline="@+id/total_sale"
+            android:layout_toRightOf="@+id/total_sales_number"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sales_amount_number"
+            android:text="@string/sales_amount_number"
+            android:textSize="@dimen/d_total_sales"
+            android:textColor="@color/color_font_manager"
+            android:layout_alignBaseline="@+id/total_sale"
+            android:layout_toRightOf="@+id/sales_amount"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ticket_left"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/ticket_left"
+            android:textSize="@dimen/d_total_sales"
+            android:textColor="@color/color_font_manager"
+            android:layout_alignLeft="@+id/tv_sales_info"
+            android:layout_below="@+id/total_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ticket_left_number"
+            android:text="@string/ticket_left_number"
+            android:textSize="@dimen/d_total_sales"
+            android:textColor="@color/color_font_manager"
+            android:layout_alignBaseline="@+id/ticket_left"
+            android:layout_toRightOf="@+id/ticket_left"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_sales_info"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/play_introduced"
+            android:text="@string/gameplay_introduced"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/d_sales_info"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/introduced_info"
+            android:textSize="@dimen/d_total_sales"
+            android:textColor="@color/color_font_manager"
+            android:layout_below="@+id/play_introduced"
+            android:layout_alignLeft="@+id/play_introduced"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

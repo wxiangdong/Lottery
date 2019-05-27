@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_pop">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_select_pop_title"
+            android:text="@string/select_number"
+            android:textSize="@dimen/d_pop_select_title"
+            android:textColor="@color/lottery_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_ticket_left"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:textSize="@dimen/d_pop_select_title"
+            android:textColor="@color/lottery_value"
+            android:text="@string/surplus_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@mipmap/close"
+        android:layout_width="@dimen/d_img_close_w"
+        android:layout_height="@dimen/d_img_close_h" />
+
+    <TextView
+        android:id="@+id/tv_buying_tips"
+        android:layout_below="@+id/bt_close"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_centerHorizontal="true"
+        android:text="@string/buying_tips"
+        android:textSize="@dimen/d_pop_select_buying_tips"
+        android:textColor="@color/color_buying_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_select_ticket_number"
+        android:layout_below="@+id/tv_buying_tips"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_add_subtract_h">
+
+        <ImageView
+            android:id="@+id/bt_subtract"
+            android:src="@mipmap/subtract"
+            android:background="@drawable/shape_left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/margin_10"
+            android:layout_height="@dimen/d_add_subtract_h" />
+
+        <TextView
+            android:id="@+id/tv_buy_lottery_number"
+            android:background="@drawable/shape_text"
+            android:text="@string/buy_lottery_number"
+            android:textSize="@dimen/d_pop_select_buy_ticket_number"
+            android:textColor="@color/color_button_background"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/d_add_subtract_h" />
+
+        <ImageView
+            android:id="@+id/bt_add"
+            android:src="@mipmap/add"
+            android:background="@drawable/shape_right"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/margin_10"
+            android:layout_height="@dimen/d_add_subtract_h" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_payment_remind"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_select_ticket_number"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_payment_reminders"
+            android:text="@string/payment_remind"
+            android:textSize="@dimen/d_pop_select_payment_remind"
+            android:textColor="@color/color_button_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_rmb"
+            android:layout_toRightOf="@+id/tv_payment_reminders"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:src="@mipmap/rmb"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/d_img_rmb_width"
+            android:layout_height="@dimen/d_img_rmb_height" />
+
+        <TextView
+            android:id="@+id/tv_sum_payable"
+            android:text="@string/sum_payable"
+            android:textColor="@color/color_button_background"
+            android:textSize="@dimen/d_pop_select_sum_payable"
+            android:layout_toRightOf="@id/img_rmb"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_buy_immediately"
+        android:layout_below="@+id/layout_payment_remind"
+        android:text="@string/botton_buy_immediately"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/d_textsize_button_buy"
+        android:background="@drawable/shape_button"
+        android:layout_width="@dimen/d_button_buy_w"
+        android:layout_height="@dimen/d_button_buy_h"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+
+</RelativeLayout>
